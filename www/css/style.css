@@ -11,15 +11,16 @@ body {
     text-align: center;
 }
 #content #logo img {
-    min-width: 150px;
-    max-width: 250px;
-    width: 50%;
+    min-width: 200px;
+    max-width: 300px;
+    width: 60%;
 }
 #content #buttons .btn {
     font-size: 28px;
     padding: 0.1em 0.3em 0em 0.3em;
 }
 #content #logo #input {
+    margin: 0.5em auto;
     text-align: center;
 }
 #content #logo #input button,
@@ -27,9 +28,16 @@ body {
     display: block;
     margin: 1em auto;
 }
+#content #logo #input button {
+    font-size: 28px;
+    padding: 0.1em 0.3em 0em 0.3em;
+}
 #content #logo #input input {
     border: 1px solid #800080;
     border-radius: 5px;
+    font-size: 28px;
+    max-width: 80%;
+    padding: 0.1em 0.3em 0em 0.3em;
     text-align: center;
 }
 #content #buttons {
