@@ -1,0 +1,145 @@
+body {
+    font-family: Helvetica;
+    font-size: 16px;
+    margin: 0;
+}
+#content {
+    margin: 2em auto 0 auto;
+    text-align: center;
+}
+#content #logo  {
+    text-align: center;
+}
+#content #logo img {
+    min-width: 150px;
+    max-width: 250px;
+    width: 50%;
+}
+#content #buttons .btn {
+    font-size: 28px;
+    padding: 0.1em 0.3em 0em 0.3em;
+}
+#content #logo #input {
+    text-align: center;
+}
+#content #logo #input button,
+#content #logo #input input {
+    display: block;
+    margin: 1em auto;
+}
+#content #logo #input input {
+    border: 1px solid #800080;
+    border-radius: 5px;
+    text-align: center;
+}
+#content #buttons {
+    margin: 0 1em;
+    position: relative;
+    text-align: left;
+    top: -20px;
+}
+#content #levels {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    text-align: left;
+}
+#content #levels .level {
+    padding: 0.8em;
+}
+#content #levels .level figure {
+    border-radius: 5px;
+    box-shadow: 5px 5px 9px #AAA;
+}
+#content #levels .level figure a,
+#content #levels .level figure figcaption {
+    display: inline-block;
+    margin: 0.1em;
+    vertical-align: top;
+}
+#content #levels .level figure a img {
+    width: 120px;
+}
+#content #levels .level figure figcaption p {
+    margin: 0.8em auto;
+    text-align: center;
+}
+#content #levels .level figure figcaption .btn {
+    width: 100px;
+}
+#content #levels .level figure figcaption .progress-icon {
+    background-color: #22BCE0;
+    border-radius: 5px;
+    color: #FFF;
+    margin-top: 30px;
+    width: 30px;
+}
+#content #levels .level .extra {
+    border-top: 3px solid #22BCE0;
+    color: #7A7A7A;
+    padding-top: 0.6em;
+    text-align: center;
+}
+#content #levels .level .extra p:first-child {
+    text-align: left;
+}
+#content #levels .level .extra p:last-child {
+    text-align: right;
+}
+#content #levels .level .extra p:last-child span:first-child {
+    color: #FFF;
+    background-color: #000;
+    border-radius: 5px;
+    padding: 0.1em 0.3em;
+}
+#content #levels .level .extra p:last-child span:last-child {
+    color: #38C;
+}
+#content #logos {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+#content #logos .logo-preview img {
+    width: 100%;
+}
+#header {
+    box-shadow: 0 7px 9px #CCC;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+#header figure a img {
+    width: 300px;
+}
+#footer #stats {
+    margin: 2em 0 0.5em 0;
+    padding: 0.2em;
+}
+#footer #stats p {
+    margin: 0;
+}
+#footer #stats #friticas {
+    text-align: right;
+}
+#footer #stats #friticas:after {
+    content: url('../img/platanito.png');
+    position: relative;
+    top: 6px;
+}
+#footer #stats #puntos {
+    margin-top: 6px;
+}
+#footer .ads {
+    background-color: #542E91;
+    border-radius: 5px;
+    color: #FFF;
+    height: 38px;
+    margin: 0.5em 0 0 0;
+    padding: 0.5em;
+    text-align: center;
+    width: 100%;
+}
+.btn {
+    color: white;
+}

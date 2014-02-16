@@ -1,0 +1,137 @@
+<!DOCTYPE HTML>
+<html lang="es">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="user-scalable=no, initial-scale=1, maximum-scale=1, minimum-scale=1, width=device-width, height=device-height, target-densitydpi=device-dpi" />
+        <meta name="format-detection" content="telephone=no" />
+        <title>Logo Sapiens</title>
+        <link rel="stylesheet" type="text/css" href="./css/jquery-ui-1.10.4.custom.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/bootstrap.min.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/icons.css" media="all" />
+        <link rel="stylesheet" type="text/css" href="./css/style.css" media="all" />
+    </head>
+
+    <body id="deviceready">
+        <!--content-->
+        <header id="header">
+            <figure>
+                <a href="#">
+                    <img src="./img/logo-sapiens.png" alt="" />
+                </a>
+            </figure>
+        </header>
+
+        <section id="content"> </section>
+
+        <footer id="footer">
+            <section id="stats" class="row">
+                <p id="puntos" class="col-xs-6"> 1234 Puntos </p>
+
+                <p id="friticas" class="col-xs-6"> 200 Friticas </p>
+            </section>
+
+            <section class="ads">
+                <p>Publicidad</p>
+            </section>
+        </footer>
+        <!--/content-->
+
+        <!--templates-->
+        <script id="level-template" type="text/template">
+            <figure>
+                <a href="#/level/<%= number %>">
+                    <img src="./img/levels/<%= number %>.jpg" alt="Nivel <%= number %>" />
+                </a>
+
+                <figcaption>
+                    <p>
+                        <a href="#/level/<%= number %>" class="btn btn-primary" type="button">Nivel <%= number %></a>
+                    </p>
+
+                    <p class="starts">
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                        <span class="icon-star"></span>
+                    </p>
+
+                    <p class="progress-icon">
+                        <span class="icon-uniF778"></span>
+                    </p>
+                </figcaption>
+            </figure>
+
+            <section class="extra row-fluid">
+                <p class="col-xs-4"> <span class="icon-pigpenx"></span> <span class="icon-pigpenw"></span></p>
+
+                <p class="col-xs-4"> <%= completed %>/<%= total %> </p>
+
+                <p class="col-xs-4"> <span>0</span> <span class="icon-uniF738"></span> </p>
+            </section>
+        </script>
+
+        <script id="logo-template" type="text/template">
+            <section id="buttons">
+                    <a class="btn btn-primary" href="#level/<%= level_number %>"><span class="icon-pigpeny"></a></span>
+            </section>
+
+            <figure id="logo">
+                <img  src="./img/logos/<%= img %>" alt="" />
+
+                <figcaption id="input">
+                    <input <%= completed ? 'disabled' : ''%> type="text" value="<%= completed ? name : ''%>"/>
+                    <button class="btn btn-primary" type="button">Aceptar</button>
+                </figcaption>
+            </figure>
+        </script>
+
+        <script id="logos-preview-template" type="text/template">
+            <section id="buttons">
+                    <a class="btn btn-primary" href="#"><span class="icon-pigpeny"></a></span>
+            </section>
+
+            <ul id="logos" class="row"></ul>
+        </script>
+
+        <script id="logo-preview-template" type="text/template">
+            <figure>
+                <a href="#/level/<%= level_number %>/logo/<%= cid %>"><img src="./img/logos/<%= img %>" alt="" /></a>
+            </figure>
+        </script>
+        <!--/templates-->
+
+        <!--libs-->
+        <script src="./js/lib/jquery-2.1.0.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/lib/jquery-ui-1.10.4.custom.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/lib/underscore-min.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
+        <script type="text/javascript" src="phonegap.js"></script>
+        <!--/libs-->
+
+        <!--backbone-->
+        <script src="./js/models/logo.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/collections/logos.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/views/logo.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./js/models/level.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/collections/levels.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/views/level.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./js/views/levels.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/views/logop.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/views/logosp.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./js/app.js" type="text/javascript" charset="utf-8"></script>
+
+        <script src="./js/routers/router.js" type="text/javascript" charset="utf-8"></script>
+        <!--/backbone-->
+
+        <!--PhoneGap-->
+        <script type="text/javascript">
+            app.initialize();
+        </script>
+        <!--/PhoneGap-->
+    </body>
+</html>
