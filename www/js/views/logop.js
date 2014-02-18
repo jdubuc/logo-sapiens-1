@@ -2,7 +2,7 @@ var app = app || {};
 
 app.LogoPreView = Backbone.View.extend({
     tagName: 'li',
-    className: 'logo-preview col-xs-4 col-sm-3',
+    className: 'logo-preview col-xs-4 col-sm-4',
     template: _.template($('#logo-preview-template').html()),
 
     render: function() {
