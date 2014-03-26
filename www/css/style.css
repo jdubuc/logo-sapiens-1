@@ -18,13 +18,11 @@ body {
     width: 100%;
 }
 #content #logo .container {
-    position: relative;
+    background-image: url('../img/completed-bubble.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     width: 100%;
-}
-#content #logo .container .icons {
-    bottom: 0;
-    position: absolute;
-    right: 0;
 }
 #content #buttons .btn {
     font-size: 28px;
@@ -170,10 +168,6 @@ body {
 }
 .btn {
     color: white;
-}
-.completed-buble:before {
-    content: url('../img/completed-buble.png');
-    opacity: 0.8;
 }
 .lock:before {
     content: url('../img/lock.png');

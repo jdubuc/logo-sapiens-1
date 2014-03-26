@@ -18,7 +18,7 @@ app.LogoView = Backbone.View.extend({
             self.check();
         });
 
-        if(!this.model.get('completed')) this.$('.icons').hide();
+        if(!this.model.get('completed')) this.$('.container').css('background-image', 'none');
     },
 
     check: function() {
