@@ -8,12 +8,23 @@ body {
     text-align: center;
 }
 #content #logo  {
+    margin: 0 auto;
+    max-width: 300px;
+    min-width: 200px;
     text-align: center;
+    width: 60%;
 }
 #content #logo img {
-    min-width: 200px;
-    max-width: 300px;
-    width: 60%;
+    width: 100%;
+}
+#content #logo .container {
+    position: relative;
+    width: 100%;
+}
+#content #logo .container .icons {
+    bottom: 0;
+    position: absolute;
+    right: 0;
 }
 #content #buttons .btn {
     font-size: 28px;
@@ -160,8 +171,11 @@ body {
 .btn {
     color: white;
 }
+.completed-buble:before {
+    content: url('../img/completed-buble.png');
+    opacity: 0.8;
+}
 .lock:before {
     content: url('../img/lock.png');
     opacity: 0.8;
 }
-

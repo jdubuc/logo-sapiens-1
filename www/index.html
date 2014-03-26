@@ -79,12 +79,17 @@
             </section>
 
             <figure id="logo">
-                <img  src="./img/logos/<%= img %>" alt="" />
+                <div class="container">
+                    <img  src="./img/logos/<%= img %>" alt="" />
+
+                    <div class="icons"><span class="completed-buble"></span></div>
+                </div>
 
                 <figcaption id="input">
                     <input <%= completed ? 'disabled' : ''%> type="text" value="<%= completed ? name : ''%>"/>
                     <button class="btn btn-primary" type="button">Aceptar</button>
                 </figcaption>
+
             </figure>
         </script>
 
@@ -97,8 +102,12 @@
         </script>
 
         <script id="logo-preview-template" type="text/template">
-            <figure>
-                <a href="#/level/<%= level_number %>/logo/<%= cid %>"><img src="./img/logos/<%= img %>" alt="" /></a>
+            <figure id="logo">
+                <div class="container">
+                    <a href="#/level/<%= level_number %>/logo/<%= cid %>"><img src="./img/logos/<%= img %>" alt="" /></a>
+
+                    <div class="icons"><span class="completed-buble"></span></div>
+                </div>
             </figure>
         </script>
         <!--/templates-->

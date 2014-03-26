@@ -12,6 +12,10 @@ app.LogosPreView = Backbone.View.extend({
 
     add_logo: function(logo) {
         var view = new app.LogoPreView({model: logo});
-        this.$('ul').append(view.render().el);
+        var $el = view.render().$el;
+
+        if(!logo.get('completed')) $el.find('.icons').hide();
+
+        this.$('ul').append($el);
     }
 });
