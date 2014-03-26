@@ -11,6 +11,7 @@ app.Logo = Backbone.Model.extend({
         if(string.toUpperCase() === this.get('name').toUpperCase()) {
             this.set('img', this.get('img').replace('incompletos', 'completos'));
             this.set('completed', true);
+            this.trigger('completed');
         }
     },
 });

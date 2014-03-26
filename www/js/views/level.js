@@ -10,6 +10,7 @@ app.LevelView = Backbone.View.extend({
         kwargs.completed = this.model.completed();
         kwargs.total = this.model.total();
         this.$el.html(this.template(kwargs));
+        if(this.model.get('unlocked')) this.$('.icons').hide();
         return this;
     },
 });

@@ -1,5 +1,6 @@
 var app = app || {};
 
+// Begin Level 1
 app.game_levels = new app.Levels();
 
 var logos = new app.Logos();
@@ -88,13 +89,23 @@ logos.add({
     img: 'incompletos/tves.png',
 });
 
-
 app.game_levels.add({
     number: 1,
     logos: logos,
+    unlocked: true,
 });
+// End Level 1
 
-for(var i = 2; i <= 15; i++) {
+
+// Begin Level 2
+app.game_levels.add({
+    number: 2,
+    prev_level: app.game_levels.at(0),
+});
+// End Level 2
+
+// Dummy levels
+for(var i = 3; i <= 15; i++) {
     app.game_levels.add({
         number: i,
     });

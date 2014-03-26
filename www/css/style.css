@@ -58,6 +58,7 @@ body {
 #content #levels .level figure {
     border-radius: 5px;
     box-shadow: 5px 5px 9px #AAA;
+    position: relative;
 }
 #content #levels .level figure a,
 #content #levels .level figure figcaption {
@@ -102,6 +103,14 @@ body {
 }
 #content #levels .level .extra p:last-child span:last-child {
     color: #38C;
+}
+#content #levels .level .icons {
+    min-height: 100%;
+    padding: 1.5em;
+    position: absolute;
+    text-align: center;
+    top: 0;
+    width: 100%;
 }
 #content #logos {
     list-style: none;
@@ -151,3 +160,8 @@ body {
 .btn {
     color: white;
 }
+.lock:before {
+    content: url('../img/lock.png');
+    opacity: 0.8;
+}
+
