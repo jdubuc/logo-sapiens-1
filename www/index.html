@@ -85,9 +85,15 @@
 
                 <figcaption id="input">
                     <input <%= completed ? 'readonly' : ''%> type="text" value="<%= completed ? name : ''%>"/>
+
+                    <div id="segments">
+                        <% for(var i = 0; i < name.length; i++) { %>
+                            <div class="segment"></div>
+                        <% } %>
+                    </div>
+
                     <button class="btn btn-primary" type="button">Aceptar</button>
                 </figcaption>
-
             </figure>
         </script>
 

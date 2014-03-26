@@ -33,26 +33,39 @@ body {
     text-align: center;
 }
 #content #logo #input button,
-#content #logo #input input {
+#content #logo #input input,
+#content #logo #input #segments {
     display: block;
-    margin: 1em auto;
+    margin: 0 auto;
+    text-align: center;
 }
 #content #logo #input button {
     font-size: 28px;
+    margin-top: 1em;
     padding: 0.1em 0.3em 0em 0.3em;
 }
+#content #logo #input input,
+#content #logo #input #segments {
+    max-width: 260px;
+    width: 100%;
+}
 #content #logo #input input {
-    border: 1px solid #800080;
+    border: none;
     border-radius: 5px;
     font-size: 28px;
-    max-width: 80%;
     padding: 0.1em 0.3em 0em 0.3em;
-    text-align: center;
 }
 #content #logo #input input.wrong-guess {
     border: 2px solid red;
     box-shadow: 0 0 8px #800080;
     color: red;
+}
+#content #logo #input #segments .segment {
+    border-top: 2px solid #333;
+    display: inline-block;
+    max-height: 1px;
+    vertical-align: top;
+    width: 0.8em;
 }
 #content #buttons {
     margin: 0 1em;
