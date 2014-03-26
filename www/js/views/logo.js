@@ -23,6 +23,12 @@ app.LogoView = Backbone.View.extend({
 
     check: function() {
         this.model.check($('#input input').val().trim());
-        if(this.model.get('completed')) this.render();
+
+        if(this.model.get('completed')) {
+             this.render();
+
+        } else {
+            this.$('input').addClass('wrong-guess');
+        }
     },
 });
