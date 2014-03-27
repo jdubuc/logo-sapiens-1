@@ -23,7 +23,13 @@ body {
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    position: relative;
     width: 100%;
+}
+#content #logo .container .icons {
+    bottom: 0;
+    position: absolute;
+    right: 0;
 }
 #content #buttons .btn {
     font-size: 28px;
@@ -212,5 +218,9 @@ body {
 }
 .lock:before {
     content: url('../img/lock.png');
+    opacity: 0.8;
+}
+.more-info:before {
+    content: url('../img/more-info.png');
     opacity: 0.8;
 }

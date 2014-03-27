@@ -5,9 +5,11 @@ app.LogoView = Backbone.View.extend({
     template: _.template($('#logo-template').html()),
 
     render: function() {
+        var kwargs = this.model.toJSON();
         var self = this;
 
-        this.$el.html(this.template(this.model.toJSON()));
+        kwargs.cid = this.model.cid;
+        this.$el.html(this.template(kwargs));
 
         this.$('#input button').click(function() {
             self.check();

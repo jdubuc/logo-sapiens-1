@@ -81,6 +81,10 @@
             <figure id="logo">
                 <div class="container">
                     <img  src="./img/logos/<%= img %>" alt="" />
+
+                    <% if(completed) { %>
+                        <div class="icons"><a class="more-info" href="#more-info/<%= level_number %>/logo/<%= cid %>"></a></div>
+                    <% } %>
                 </div>
 
                 <figcaption id="input">
