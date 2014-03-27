@@ -2,6 +2,7 @@ body {
     font-family: Helvetica;
     font-size: 16px;
     margin: 0;
+    position: relative;
 }
 #content {
     margin: 2em auto 0 auto;
@@ -183,6 +184,28 @@ body {
     padding: 0.5em;
     text-align: center;
     width: 100%;
+}
+.arrow-left,
+.arrow-right {
+    background-color: #DDD;
+    border-radius: 10px;
+    font-size: 3.0em;
+    position: absolute;
+    top: 280px;
+}
+.arrow-left a,
+.arrow-right a {
+    color: #888;
+    display: block;
+    line-height: 4.5em;
+    opacity: 0.6;
+    text-decoration: none;
+}
+.arrow-left {
+    left: -10px;
+}
+.arrow-right {
+    right: -10px;
 }
 .btn {
     color: white;

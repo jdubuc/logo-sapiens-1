@@ -5,6 +5,8 @@ app.Logo = Backbone.Model.extend({
         name: '',
         img: '',
         completed: false,
+        prev_logo: null,
+        next_logo: null,
     },
 
     check: function(string) {

@@ -95,6 +95,14 @@
                     <button class="btn btn-primary" type="button">Aceptar</button>
                 </figcaption>
             </figure>
+
+            <% if(prev_logo) { %>
+                <div class="arrow-left"><a href="#level/<%= level_number %>/logo/<%= prev_logo.cid %>" class="icon-arrow-left"></a></div>
+            <% } %>
+
+            <% if(next_logo) { %>
+                <div class="arrow-right"><a href="#level/<%= level_number %>/logo/<%= next_logo.cid %>" class="icon-arrow-right"></a></div>
+            <% } %>
         </script>
 
         <script id="logos-preview-template" type="text/template">
