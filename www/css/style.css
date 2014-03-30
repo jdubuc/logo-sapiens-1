@@ -15,14 +15,12 @@ body {
     text-align: center;
     width: 60%;
 }
-#content #logo img {
-    width: 100%;
-}
 #content #logo .container {
     background-image: url('../img/completed-bubble.png');
     background-position: center center;
     background-repeat: no-repeat;
     background-size: contain;
+    padding: 2em;
     position: relative;
     width: 100%;
 }
@@ -30,6 +28,9 @@ body {
     bottom: 0;
     position: absolute;
     right: 0;
+}
+#content #logo .container img {
+    width: 100%;
 }
 #content #buttons .btn {
     font-size: 28px;
