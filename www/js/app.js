@@ -104,9 +104,35 @@ app.game_levels.add({
 });
 // End Level 2
 
+
 // Dummy levels
 for(var i = 3; i <= 15; i++) {
     app.game_levels.add({
         number: i,
     });
 }
+
+
+// Begin Score n' Stuff
+$(function() {
+    $('#score span').html(app.score = 0);
+    $('#money span').html(app.money = 0);
+
+    // On level completed
+    app.game_levels.forEach(function(level) {
+        level.on('completed', function() {
+            $('#score span').html(app.score += 100);
+            $('#money span').html(app.money += 40);
+        });
+    });
+
+    // On logo completed
+    app.game_levels.forEach(function(level) {
+        level.get('logos').on('completed', function() {
+            $('#score span').html(app.score += 10);
+            $('#money span').html(app.money += 10);
+        });
+    });
+});
+// End Score n' Stuff
+

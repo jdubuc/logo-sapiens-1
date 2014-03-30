@@ -10,6 +10,7 @@ app.LogoView = Backbone.View.extend({
 
         kwargs.cid = this.model.cid;
         this.$el.html(this.template(kwargs));
+        this.$('#input input').focus();
 
         this.$('#input button').click(function() {
             self.check();

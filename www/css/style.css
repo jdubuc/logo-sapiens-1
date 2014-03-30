@@ -5,7 +5,7 @@ body {
     position: relative;
 }
 #content {
-    margin: 2em auto 0 auto;
+    margin: 1em auto 0 auto;
     text-align: center;
 }
 #content #logo  {
@@ -32,6 +32,10 @@ body {
 #content #logo .container img {
     width: 100%;
 }
+#content #buttons {
+    margin: 0 1em;
+    text-align: left;
+}
 #content #buttons .btn {
     font-size: 28px;
     padding: 0.1em 0.3em 0em 0.3em;
@@ -49,7 +53,7 @@ body {
 }
 #content #logo #input button {
     font-size: 28px;
-    margin-top: 1em;
+    margin-top: 0.4em;
     padding: 0.1em 0.3em 0em 0.3em;
 }
 #content #logo #input input,
@@ -74,12 +78,6 @@ body {
     max-height: 1px;
     vertical-align: top;
     width: 0.8em;
-}
-#content #buttons {
-    margin: 0 1em;
-    position: relative;
-    text-align: left;
-    top: -20px;
 }
 #content #levels {
     list-style: none;
@@ -171,15 +169,15 @@ body {
 #footer #stats p {
     margin: 0;
 }
-#footer #stats #friticas {
+#footer #stats #money {
     text-align: right;
 }
-#footer #stats #friticas:after {
+#footer #stats #money:after {
     content: url('../img/platanito.png');
     position: relative;
     top: 6px;
 }
-#footer #stats #puntos {
+#footer #stats #score {
     margin-top: 6px;
 }
 #footer .ads {
