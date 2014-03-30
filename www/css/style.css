@@ -192,25 +192,32 @@ body {
 }
 .arrow-left,
 .arrow-right {
-    background-color: #DDD;
-    border-radius: 10px;
-    font-size: 3.0em;
     position: absolute;
     top: 280px;
 }
+.arrow-left {
+    left: 0px;
+}
+.arrow-right {
+    right: 0px;
+}
 .arrow-left a,
 .arrow-right a {
+    background-color: #DDD;
+    font-size: 2.0em;
     color: #888;
     display: block;
-    line-height: 4.5em;
+    line-height: 6.2em;
     opacity: 0.6;
     text-decoration: none;
 }
-.arrow-left {
-    left: -10px;
+.arrow-left a {
+    border-radius: 0 10px 10px 0;
+    padding-right: 0.1em;
 }
-.arrow-right {
-    right: -10px;
+.arrow-right a {
+    border-radius: 10px 0 0 10px;
+    padding-left: 0.1em;
 }
 .btn {
     color: white;
