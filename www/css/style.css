@@ -8,6 +8,17 @@ body {
     margin: 1em auto 0 auto;
     text-align: center;
 }
+#content #buttons {
+    margin: 0 auto;
+}
+#content #buttons div:nth-of-type(2) .btn {
+    font-size: 28px;
+    padding: 0.1em 0.4em;
+}
+#content #buttons .btn-back {
+    font-size: 28px;
+    padding: 0.2em 0.3em 0em 0.2em;
+}
 #content #logo  {
     margin: 0 auto;
     max-width: 300px;
@@ -32,14 +43,6 @@ body {
 #content #logo .container img {
     width: 100%;
 }
-#content #buttons {
-    margin: 0 1em;
-    text-align: left;
-}
-#content #buttons .btn {
-    font-size: 28px;
-    padding: 0.1em 0.3em 0em 0.3em;
-}
 #content #logo #input {
     margin: 0.5em auto;
     text-align: center;
@@ -54,7 +57,7 @@ body {
 #content #logo #input button {
     font-size: 28px;
     margin-top: 0.4em;
-    padding: 0.1em 0.3em 0em 0.3em;
+    padding: 0.1em 0.4em;
 }
 #content #logo #input input,
 #content #logo #input #segments {

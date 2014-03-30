@@ -74,12 +74,12 @@
         </script>
 
         <script id="logo-template" type="text/template">
-            <section id="buttons">
-                    <div>
-                        <a class="btn btn-primary" href="#level/<%= level_number %>"><span class="icon-pigpeny"></a></span>
+            <section id="buttons" class="row">
+                    <div class="col-xs-3 col-sm-2 col-lg-1">
+                        <a class="btn btn-primary btn-back" href="#level/<%= level_number %>"><span class="icon-pigpeny"></a></span>
                     </div>
 
-                    <div>
+                    <div class="col-xs-6 col-sm-offset-7 col-sm-3 col-lg-offset-9 col-lg-2">
                         <a class="btn btn-primary" href="#level/<%= level_number %>">Ayudaitas</a></span>
                     </div>
             </section>
@@ -116,11 +116,15 @@
         </script>
 
         <script id="logos-preview-template" type="text/template">
-            <section id="buttons">
-                    <a class="btn btn-primary" href="#"><span class="icon-pigpeny"></a></span>
+            <section id="buttons" class="row">
+                <div class="col-xs-3 col-sm-2 col-lg-1">
+                    <a class="btn btn-primary btn-back" href="#"><span class="icon-pigpeny"></span></a>
+                </div>
             </section>
 
-            <ul id="logos" class="row"></ul>
+            <section>
+                <ul id="logos" class="row"></ul>
+            </section>
         </script>
 
         <script id="logo-preview-template" type="text/template">
