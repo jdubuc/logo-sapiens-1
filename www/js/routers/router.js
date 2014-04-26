@@ -3,8 +3,14 @@ var app = app || {};
 app.Router = Backbone.Router.extend({
     routes: {
         '': 'render_levels',
+        'help/:id/:id': 'render_helps',
+        'help/:id/:id/puzzle': 'render_puzzle',
         'level/:id': 'render_level',
         'level/:id/logo/:id': 'render_logo',
+    },
+
+    render_helps: function(level, logo) {
+        new app.HelpsView({model: app.game_levels.at(level-1).get('logos').get(logo)}).render();
     },
 
     render_level: function(id) {
@@ -17,6 +23,10 @@ app.Router = Backbone.Router.extend({
 
     render_logo: function(level, logo) {
         new app.LogoView({model: app.game_levels.at(level-1).get('logos').get(logo)}).render();
+    },
+
+    render_puzzle: function(level, logo) {
+        new app.PuzzleView({model: app.game_levels.at(level-1).get('logos').get(logo)}).render();
     },
 });
 

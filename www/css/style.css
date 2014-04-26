@@ -1,8 +1,21 @@
 body {
+    background: url('../img/back.png');
     font-family: Helvetica;
     font-size: 16px;
     margin: 0;
     position: relative;
+}
+#ayudas {
+    color: black;
+    margin: 2em auto;
+    max-width: 600px;
+    text-align: left;
+}
+#ayudas .row + .row {
+    margin-top: 0.4em;
+}
+#ayudas .row div + div {
+    padding-top: 0.4em;
 }
 #content {
     margin: 1em auto 0 auto;
@@ -206,7 +219,7 @@ body {
 }
 .arrow-left a,
 .arrow-right a {
-    background-color: #DDD;
+    background-color: #BBB;
     font-size: 2.0em;
     color: #888;
     display: block;

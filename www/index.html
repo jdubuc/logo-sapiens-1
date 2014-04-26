@@ -37,6 +37,51 @@
         <!--/content-->
 
         <!--templates-->
+        <script id="helps-template" type="text/template">
+            <section id="buttons" class="row">
+                    <div class="col-xs-3 col-sm-2 col-lg-1">
+                        <a class="btn btn-primary btn-back" href="#level/<%= level_number %>/logo/<%= cid  %>"><span class="icon-pigpeny"></a></span>
+                    </div>
+            </section>
+
+            <section id="ayudas" class="container show-top-margin separate-rows tall-rows">
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/data">Datos de la marca</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/sound">Sonido</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/picture">Pista Visual</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/char-mix">Sopa de letras</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/puzzle">Rompe Cabezas</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/buy-char">Comprar Letras</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+
+                <div class="row">
+                    <div class="col-xs-8"><a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>/buy-answer">Comprar Respuesta</a></div>
+                    <div class="col-xs-4"><span class="f">100F</span></div>
+                </div>
+            </section>
+        </script>
+
         <script id="level-template" type="text/template">
             <figure>
                 <a href="#/level/<%= number %>">
@@ -80,7 +125,7 @@
                     </div>
 
                     <div class="col-xs-6 col-sm-offset-7 col-sm-3 col-lg-offset-9 col-lg-2">
-                        <a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>">Ayudaitas</a></span>
+                        <a class="btn btn-primary" href="#help/<%= level_number %>/<%= cid %>">Ayudas</a></span>
                     </div>
             </section>
 
@@ -134,6 +179,17 @@
                 </div>
             </figure>
         </script>
+
+        <script id="puzzle-template" type="text/template">
+            <section id="buttons" class="row">
+                    <div class="col-xs-3 col-sm-2 col-lg-1">
+                        <a class="btn btn-primary btn-back" href="#level/<%= level_number %>/logo/<%= cid  %>"><span class="icon-pigpeny"></a></span>
+                    </div>
+            </section>
+
+            <div class="help"><canvas id="canvas"></canvas></div>
+            <!--<script type="text/javascript" src="./js/puzzle.js"></script>-->
+        </script>
         <!--/templates-->
 
         <!--libs-->
@@ -142,7 +198,8 @@
         <script src="./js/lib/bootstrap.min.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/lib/underscore-min.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/lib/backbone.js" type="text/javascript" charset="utf-8"></script>
-        <script type="text/javascript" src="phonegap.js"></script>
+        <script src="./js/puzzle.js" type="text/javascript" charset="utf-8"></script>
+        <script src="phonegap.js" type="text/javascript" charset="utf-8"></script>
         <!--/libs-->
 
         <!--backbone-->
@@ -154,6 +211,8 @@
         <script src="./js/collections/levels.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/views/level.js" type="text/javascript" charset="utf-8"></script>
 
+        <script src="./js/views/helps.js" type="text/javascript" charset="utf-8"></script>
+        <script src="./js/views/help_puzzle.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/views/levels.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/views/logop.js" type="text/javascript" charset="utf-8"></script>
         <script src="./js/views/logosp.js" type="text/javascript" charset="utf-8"></script>
