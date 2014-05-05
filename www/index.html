@@ -134,6 +134,12 @@
                     <img  src="./img/logos/<%= img %>" alt="" />
 
                     <% if(completed) { %>
+                        <figure class="gold-medal">
+                            <img src="img/completado-medalla-oro.png" alt="" />
+                        </figure>
+                    <% } %>
+
+                    <% if(completed) { %>
                         <div class="icons"><a class="more-info" href="#more-info/<%= level_number %>/logo/<%= cid %>"></a></div>
                     <% } %>
                 </div>
@@ -176,6 +182,12 @@
             <figure id="logo">
                 <div class="container">
                     <a href="#/level/<%= level_number %>/logo/<%= cid %>"><img src="./img/logos/<%= img %>" alt="" /></a>
+
+                    <% if(completed) { %>
+                        <figure class="gold-medal">
+                            <img src="img/completado-medalla-oro.png" alt="" />
+                        </figure>
+                    <% } %>
                 </div>
             </figure>
         </script>
