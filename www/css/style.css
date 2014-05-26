@@ -40,6 +40,10 @@ body {
     width: 60%;
 }
 #content #logo .container {
+    background-image: url('../img/completed-bubble.png');
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: contain;
     padding: 2em;
     position: relative;
     width: 100%;
@@ -240,14 +244,5 @@ body {
 }
 .more-info:before {
     content: url('../img/more-info.png');
-    opacity: 0.8;
-}
-.gold-medal {
-    position: absolute;
-    right: 0;
-    top: 0;
-}
-.gold-medal img {
-    max-width: 80px;
     opacity: 0.8;
 }

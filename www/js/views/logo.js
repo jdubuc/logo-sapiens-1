@@ -20,6 +20,8 @@ app.LogoView = Backbone.View.extend({
             if(event.which !== 13) return;
             self.check();
         });
+
+        if(!this.model.get('completed')) this.$('.container').css('background-image', 'none');
     },
 
     check: function() {

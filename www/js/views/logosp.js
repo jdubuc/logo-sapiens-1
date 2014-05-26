@@ -14,6 +14,8 @@ app.LogosPreView = Backbone.View.extend({
         var view = new app.LogoPreView({model: logo});
         var $el = view.render().$el;
 
+        if(!logo.get('completed')) $el.find('.container').css('background-image', 'none');
+
         this.$('ul').append($el);
     }
 });
